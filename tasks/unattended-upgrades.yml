@@ -1,0 +1,5 @@
+---
+- name: copy file to /etc/apt/
+  copy: >
+    src={{ file_to_copy }} dest=/etc/apt/99file_copied
+    owner=root group=root mode=0644

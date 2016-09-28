@@ -1,0 +1,7 @@
+---
+- hosts: all
+  roles:
+    - copytest
+  vars:
+    file_to_copy: auto-upgrades
+  sudo: true
